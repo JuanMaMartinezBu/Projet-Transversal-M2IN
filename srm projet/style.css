@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbarh{
+    border-bottom: 1px solid #ddd;
+    
+}
+.navbarv{
+
+    display: block;
+    padding: 10px;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #ddd;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease-in-out;
+    
+}
+.navbarv.show {
+    display: none;
+  }
+
+.icon-padding {
+    padding: 10px;
+  }
+.log_out{
+    position: relative;
+    bottom: -300px;
+    width: 100%;
+  }
+  
+
+
+.main-content {
+    margin-left: 20%; /* espace pour la barre latérale */
+    padding: 20px;
+}
+
+      /* Active sidebar link */
+.navbarv .nav-link.active  {
+    background-color: #e9ecef;
+    color: #007bff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.navbarv .nav-link.active i {
+  color: #007bff; /* Couleur pour l'état actif */
+}
+.navbarv .nav-link ,
+.log_out {
+    color: #333;
+    font-size: 1rem;
+    margin: 5px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.navbarv .nav-link i ,
+.log_out i{
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+.navbarv .nav-link:hover,
+.log_out:hover {
+  color: #007bff; /* Couleur des icônes au survol */
+}
+.navbarv .nav-link:hover i,
+.log_out:hover i {
+  color: #007bff; /* Couleur des icônes au survol */
+}
+/*.navbarv .log_out {
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: none;
+}*/
+
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+    }
+
+    .navbarv {
+        display: none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+    }
+        
+
+    .navbarv.show {
+      display: block;
+    }
+  }
